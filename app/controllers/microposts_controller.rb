@@ -28,7 +28,7 @@ class MicropostsController < ApplicationController
 
     respond_to do |format|
       if @micropost.save
-        format.html { redirect_to @micropost, notice: 'Micropost was successfully created.' }
+        format.html { redirect_to @micropost, notice: 'created successfully.' }
         format.json { render action: 'show', status: :created, location: @micropost }
       else
         format.html { render action: 'new' }
@@ -42,7 +42,7 @@ class MicropostsController < ApplicationController
   def update
     respond_to do |format|
       if @micropost.update(micropost_params)
-        format.html { redirect_to @micropost, notice: 'Micropost was successfully updated.' }
+        format.html { redirect_to @micropost, notice: 'updated successfully.' }
         format.json { head :no_content }
       else
         format.html { render action: 'edit' }
