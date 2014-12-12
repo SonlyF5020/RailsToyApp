@@ -5,7 +5,7 @@ header {
   background-position-y: -600px;
   background-position-x: -220px;
   color: white;
-  transition: background-position-x 8s;
+  transition: background-position-x 2s ease;
 
   h1 {
     margin-top: 200px;
@@ -16,7 +16,7 @@ header {
 
 header:hover {
   background-position-x: -500px;
-  transition: background-position-x 8s;
+  transition: background-position-x 2s ease;
 }
 
 body #main-body{
