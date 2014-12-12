@@ -1,13 +1,13 @@
 <header>
   <p id="notice"><%= notice %></p>
+  <div class="micropost-create-form">
+    <%= render 'form' %>
+  </div>
+
   <h1>我的微博列表</h1>
 </header>
 <div id="main-body">
   <div id="micropost-main-list">
-    <div class="micropost-iterm">
-      <%= render 'form' %>
-    </div>
-
     <% @microposts.each do |micropost| %>
     <div class="micropost-iterm">
       <div class="micropost-content">
