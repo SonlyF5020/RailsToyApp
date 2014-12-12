@@ -29,7 +29,7 @@ class MicropostsController < ApplicationController
 
     respond_to do |format|
       if @micropost.save
-        format.html { redirect_to @micropost, notice: 'created successfully.' }
+        format.html { redirect_to microposts_path, notice: 'created successfully.' }
         format.json { render action: 'show', status: :created, location: @micropost }
       else
         format.html { render action: 'new' }
