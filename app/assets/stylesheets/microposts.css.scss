@@ -6,12 +6,36 @@ header {
   color: white;
   min-width: 1000px;
   transition: background-position-x 2s ease;
+  position: fixed;
+  width: 100%;
+  left: 0px;
+  top: 0px;
 
   .micropost-create-form {
     width: 1000px;
     margin: auto;
     background-color: rgba(0,0,0,0.25);
     padding: 10px;
+    position: relative;
+
+    .actions {
+      width: 100px;
+      position: absolute;
+      right: 6px;
+      bottom: 10px;
+
+      input {
+        background-color: aliceblue;
+        font-size: 15px;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+      }
+
+      input:hover {
+        background-color: cornsilk;
+      }
+    }
 
     textarea {
       width: 95%;
@@ -33,6 +57,7 @@ header:hover {
 body #main-body{
   width: 1000px;
   margin: auto;
+  margin-top: 220px;
   overflow: hidden;
 
   #micropost-main-list {
