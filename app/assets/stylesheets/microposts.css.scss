@@ -44,7 +44,7 @@ body #main-body{
       }
 
       .micropost-action {
-        display: none;
+        visibility: hidden;
       }
     }
 
@@ -52,7 +52,7 @@ body #main-body{
       background-color: cornsilk;
 
       .micropost-action {
-        display: block;
+        visibility: visible;
       }
     }
   }
