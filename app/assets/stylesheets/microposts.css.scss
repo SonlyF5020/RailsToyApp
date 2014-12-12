@@ -5,12 +5,18 @@ header {
   background-position-y: -600px;
   background-position-x: -220px;
   color: white;
+  transition: background-position-x 8s;
 
   h1 {
     margin-top: 200px;
     text-align: right;
     padding-right: 105px;
   }
+}
+
+header:hover {
+  background-position-x: -500px;
+  transition: background-position-x 8s;
 }
 
 body #main-body{
