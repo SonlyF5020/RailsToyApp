@@ -1,6 +1,5 @@
 header {
   background: url("http://warlock-course.qiniudn.com/wide-wallpaper.jpg") no-repeat;
-  min-height: 300px;
   overflow: hidden;
   background-position-y: -600px;
   background-position-x: -220px;
@@ -9,6 +8,7 @@ header {
 
   h1 {
     margin-top: 200px;
+    margin-bottom: 40px;
     text-align: right;
     padding-right: 105px;
   }
@@ -26,6 +26,12 @@ body #main-body{
 
   #micropost-main-list {
   width: 100%;
+
+    .micropost-iterm:first-child {
+      textarea {
+        width: 90%;
+      }
+    }
 
     .micropost-iterm {
       margin-top: 20px;

@@ -3,6 +3,10 @@
 </header>
 <div id="main-body">
   <div id="micropost-main-list">
+    <div class="micropost-iterm">
+      <%= render 'form' %>
+    </div>
+
     <% @microposts.each do |micropost| %>
     <div class="micropost-iterm">
       <div class="micropost-content">
@@ -20,10 +24,6 @@
       </div>
     </div>
     <% end %>
-  </div>
-
-  <div id="new-micropost">
-    <%= link_to '新微博', new_micropost_path %>
   </div>
 
 </div>
