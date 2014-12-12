@@ -10,15 +10,46 @@ header {
   }
 }
 
-table {
-  width: 100%
-}
+body #main-body{
+  width: 1000px;
+  margin: auto;
+  overflow: hidden;
 
-table thead tr {
-  text-align: left;
-}
+  #micropost-main-list {
+  width: 100%;
 
-#new-micropost {
-  text-align: right;
-  padding-right: 40px;
+    .micropost-iterm {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      margin: 20px;
+      min-height: 60px;
+      padding: 10px;
+      box-shadow:1px 1px 1px 1px #888888;
+
+      .micropost-user {
+          text-align: right;
+      }
+
+      .micropost-user:before {
+        content: "--";
+      }
+
+      .micropost-action {
+        display: none;
+      }
+    }
+
+    .micropost-iterm:hover {
+      background-color: cornsilk;
+
+      .micropost-action {
+        display: block;
+      }
+    }
+  }
+
+  #new-micropost {
+    text-align: right;
+    padding-right: 40px;
+  }
 }
