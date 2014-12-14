@@ -1,100 +1,205 @@
-header {
-  background: url("http://warlock-course.qiniudn.com/wide-wallpaper.jpg") no-repeat;
-  overflow: hidden;
-  background-position-y: -600px;
-  background-position-x: -220px;
-  color: white;
-  min-width: 1000px;
-  transition: background-position-x 2s ease;
-  position: fixed;
-  width: 100%;
-  left: 0px;
-  top: 0px;
+@media only screen and (min-device-width: 1024px){
+  header {
+    background: url("http://warlock-course.qiniudn.com/wide-wallpaper.jpg") no-repeat;
+    overflow: hidden;
+    background-position-y: -600px;
+    background-position-x: -220px;
+    color: white;
+    min-width: 1000px;
+    transition: background-position-x 2s ease;
+    position: fixed;
+    width: 100%;
+    left: 0px;
+    top: 0px;
 
-  .micropost-create-form {
+    .micropost-create-form {
+      width: 1000px;
+      margin: auto;
+      background-color: rgba(0,0,0,0.25);
+      padding: 10px;
+      position: relative;
+
+      .actions {
+        width: 100px;
+        position: absolute;
+        right: 6px;
+        bottom: 10px;
+
+        input {
+          background-color: aliceblue;
+          font-size: 15px;
+          border: none;
+          padding: 10px;
+          cursor: pointer;
+        }
+
+        input:hover {
+          background-color: cornsilk;
+        }
+      }
+
+      textarea {
+        width: 95%;
+      }
+    }
+
+    h1 {
+      margin-bottom: 40px;
+      text-align: right;
+      padding-right: 105px;
+    }
+  }
+
+  header:hover {
+    background-position-x: -500px;
+    transition: background-position-x 2s ease;
+  }
+
+  body #main-body{
     width: 1000px;
     margin: auto;
-    background-color: rgba(0,0,0,0.25);
-    padding: 10px;
-    position: relative;
+    margin-top: 220px;
+    overflow: hidden;
 
-    .actions {
-      width: 100px;
-      position: absolute;
-      right: 6px;
-      bottom: 10px;
+    #micropost-main-list {
+      width: 100%;
 
-      input {
-        background-color: aliceblue;
-        font-size: 15px;
-        border: none;
+      .micropost-iterm {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin: 20px;
+        min-height: 60px;
         padding: 10px;
-        cursor: pointer;
-      }
+        background-color: aliceblue;
 
-      input:hover {
-        background-color: cornsilk;
-      }
-    }
-
-    textarea {
-      width: 95%;
-    }
-  }
-
-  h1 {
-    margin-bottom: 40px;
-    text-align: right;
-    padding-right: 105px;
-  }
-}
-
-header:hover {
-  background-position-x: -500px;
-  transition: background-position-x 2s ease;
-}
-
-body #main-body{
-  width: 1000px;
-  margin: auto;
-  margin-top: 220px;
-  overflow: hidden;
-
-  #micropost-main-list {
-  width: 100%;
-
-    .micropost-iterm {
-      margin-top: 20px;
-      margin-bottom: 20px;
-      margin: 20px;
-      min-height: 60px;
-      padding: 10px;
-      background-color: aliceblue;
-
-      .micropost-user {
+        .micropost-user {
           text-align: right;
+        }
+
+        .micropost-user:before {
+          content: "--";
+        }
+
+        .micropost-action {
+          visibility: hidden;
+        }
       }
 
-      .micropost-user:before {
-        content: "--";
-      }
+      .micropost-iterm:hover {
+        background-color: cornsilk;
 
-      .micropost-action {
-        visibility: hidden;
+        .micropost-action {
+          visibility: visible;
+        }
       }
     }
 
-    .micropost-iterm:hover {
-      background-color: cornsilk;
+    #new-micropost {
+      text-align: right;
+      padding-right: 40px;
+    }
+  }
+}
 
-      .micropost-action {
-        visibility: visible;
+@media only screen and (max-device-width: 720px) {
+  header {
+    background: url("http://warlock-course.qiniudn.com/wide-wallpaper.jpg") no-repeat;
+    overflow: hidden;
+    background-position-y: -600px;
+    background-position-x: -220px;
+    color: white;
+    transition: background-position-x 2s ease;
+    position: fixed;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+    font-size: 24px;
+
+    .micropost-create-form {
+      margin: auto;
+      background-color: rgba(0,0,0,0.25);
+      padding: 10px;
+      position: relative;
+
+      .actions {
+        width: 100px;
+        position: absolute;
+        right: 6px;
+        bottom: 10px;
+
+        input {
+          background-color: aliceblue;
+          font-size: 15px;
+          border: none;
+          padding: 10px;
+          cursor: pointer;
+        }
+
+        input:hover {
+          background-color: cornsilk;
+        }
       }
+
+      textarea {
+        width: 95%;
+      }
+    }
+
+    h1 {
+      margin-bottom: 40px;
+      text-align: right;
+      padding-right: 105px;
     }
   }
 
-  #new-micropost {
-    text-align: right;
-    padding-right: 40px;
+  header:hover {
+    background-position-x: -500px;
+    transition: background-position-x 2s ease;
+  }
+
+  body #main-body{
+    width: 100%;
+    margin: auto;
+    margin-top: 240px;
+    overflow: hidden;
+    font-size: 24px;
+
+    #micropost-main-list {
+      width: 100%;
+
+      .micropost-iterm {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin: 10px;
+        min-height: 60px;
+        padding: 10px;
+        background-color: aliceblue;
+
+        .micropost-user {
+          text-align: right;
+        }
+
+        .micropost-user:before {
+          content: "--";
+        }
+
+        .micropost-action {
+          visibility: hidden;
+        }
+      }
+
+      .micropost-iterm:hover {
+        background-color: cornsilk;
+
+        .micropost-action {
+          visibility: visible;
+        }
+      }
+    }
+
+    #new-micropost {
+      text-align: right;
+      padding-right: 40px;
+    }
   }
 }
