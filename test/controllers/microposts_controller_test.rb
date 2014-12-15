@@ -21,7 +21,7 @@ class MicropostsControllerTest < ActionController::TestCase
       post :create, micropost: { content: @micropost.content, user_id: @micropost.user_id }
     end
 
-    assert_redirected_to micropost_path(assigns(:micropost))
+    assert_redirected_to assigns(:microposts)
   end
 
   test "should show micropost" do
